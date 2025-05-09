@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 2</title>
+</head>
+<body style="background-color: #f0f4f8; font-family: sans-serif; color: #333;">
+  <header style="text-align: center;">
+    <h1 style="color: #006d77;">Flexbox Layout</h1>
+  </header>
+
+  <h3>🌟 Practice Task: Responsive Flexbox Card Layout</h3>
+  <div class="card_container">
+    <div class="card">1</div>
+    <div class="card">2</div>
+    <div class="card">3</div>
+  </div>
+  <style>
+    .card_container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .card {
+      flex: 2 1 250px;
+      background-color: #83c5be;
+      padding: 20px;
+      border-radius: 8px;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+    }
+  </style>
+
+  <h3>🔹 Exercise 1: Horizontal Navigation Bar</h3>
+  <nav><a href="">Home</a><a href="">About</a><a href="">Contact</a></nav>
+  <style>
+    nav {
+      display: flex;
+      gap: 20px;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      background-color: #006d77;
+      padding: 0.8rem;
+      border-radius: 2rem;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+      transition: 0.3s;
+    }
+    a:hover {
+      opacity: 0.7;
+    }
+  </style>
+
+  <h3>🔹 Exercise 2: Center a Box</h3>
+  <section class="sec1">
+    <div class="box"></div>
+  </section>
+  <style>
+    section {
+      width: 100%;
+      min-height: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #006d77;
+    }
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: #edf6f9;
+    }
+  </style>
+
+  <h3>🔹 Exercise 3: Responsive Card Row</h3>
+  <div class="container">
+    <div class="card3"></div>
+    <div class="card3"></div>
+    <div class="card3"></div>
+    <div class="card3"></div>
+    <div class="card3"></div>
+    <div class="card3"></div>
+  </div>
+  <style>
+    .container {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: stretch;
+      background-color: #83c5be;
+      flex-wrap: wrap;
+      border-radius: 0.5rem;
+      box-sizing: border-box;
+    }
+    .card3 {
+      height: 100px;
+      flex: 1 1 250px;
+      background-color: #006d77;
+      border-radius: 1rem;
+      margin: 10px;
+    }
+  </style>
+
+  <h3>🔹 Exercise 4: Equal Height Columns</h3>
+  <div class="container4">
+    <div class="card4"></div>
+    <div class="card4"></div>
+    <div class="card4"></div>
+  </div>
+  <style>
+    .container4 {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: stretch;
+      flex-wrap: wrap;
+    }
+    .card4 {
+      flex: 1 1 auto;
+      margin: 1rem;
+      padding: 20px;
+      box-sizing: border-box;
+      background-color: #cad2c5;
+    }
+  </style>
+
+  <h3>🔹 Exercise 5: Sidebar + Main Content</h3>
+  <section class="sec5">
+    <div class="sidebar"></div>
+    <div class="main"></div>
+  </section>
+  <style>
+    .sec5 {
+      width: 100%;
+      display: flex;
+      padding: 1rem;
+      background-color: #edf6f9;
+    }
+    .sidebar {
+      flex: 1;
+      background-color: #006d77;
+      padding: 10rem;
+    }
+    .main {
+      flex: 3;
+      background-color: #83c5be;
+      padding: 10rem;
+    }
+  </style>
+
+  <h3>🔹 Exercise 6: Button Row with Right Aligned Button</h3>
+  <div class="btncls">
+    <button>1</button><button>2</button><button class="btn2">3</button>
+  </div>
+  <style>
+    .btncls {
+      width: 100%;
+      display: flex;
+      gap: 0.5rem;
+    }
+    button {
+      padding: 0.5rem 1rem;
+      margin-left: 20px;
+      background-color: #006d77;
+      color: white;
+      border: none;
+      border-radius: 0.5rem;
+    }
+    .btn2 {
+      margin-left: auto;
+    }
+  </style>
+
+  <h3>🔹 Exercise 7: Vertical Flexbox Navigation</h3>
+  <nav class="nav1"><a href="">Home</a><a href="">About</a><a href="">Contact</a></nav>
+  <style>
+    .nav1 {
+      max-width: fit-content;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+      background-color: #006d77;
+      padding: 0.8rem;
+      border-radius: 0.2rem;
+    }
+  </style>
+
+  <h3>🔹 Exercise 8: Flex Order Change</h3>
+  <div class="mbox">
+    <div class="box" id="b1"></div>
+    <div class="box" id="b2"></div>
+    <div class="box" id="b3"></div>
+  </div>
+  <style>
+    .mbox {
+      width: 100%;
+      display: flex;
+      gap: 0.5rem;
+    }
+    .box {
+      width: 100px;
+      height: 100px;
+    }
+    #b1 {
+      background-color: #ff6b6b;
+      order: 3;
+    }
+    #b2 {
+      background-color: #6bcf63;
+      order: 2;
+    }
+    #b3 {
+      background-color: #4d96ff;
+      order: 1;
+    }
+  </style>
+
+  <h3>🔹 Exercise 9: Grow One Box More Than Others</h3>
+  <div class="mbox">
+    <div class="box" id="b1"></div>
+    <div class="box" id="b2"></div>
+    <div class="box" id="b3"></div>
+  </div>
+  <style>
+    #b1 {
+      background-color: #ff6b6b;
+      order: 3;
+      flex: 3;
+    }
+    #b2 {
+      background-color: #6bcf63;
+      order: 2;
+      flex: 2;
+    }
+    #b3 {
+      background-color: #4d96ff;
+      order: 1;
+      flex: 1;
+    }
+  </style>
+
+  <h3>🔹 Exercise 10: Profile Layout</h3>
+  <div class="profile-container">
+    <div class="profile-image">
+      <img src="https://images.unsplash.com/photo-1726056652752-58303aafa0c1?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxfHx8ZW58MHx8fHx8" alt="Profile Image">
+    </div>
+    <div class="profile-info">
+      <h2>John Doe</h2>
+      <p>Web Developer based in San Francisco. Passionate about coding and design.</p>
+      <p>Email: johndoe@example.com</p>
+      <p>Website: www.johndoe.com</p>
+    </div>
+  </div>
+
+  <style>
+    .profile-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem;
+      box-sizing: border-box;
+      background-color: #f4f4f4;
+    }
+
+    .profile-image img {
+      max-width: 300px;
+      max-height: 200px;
+      object-fit: contain;
+      border-radius: 100%;
+    }
+
+    .profile-info {
+      flex: 1;
+      padding: 1rem;
+      background-color: #cad2c5;
+      border-radius: 1rem;
+      box-sizing: border-box;
+    }
+  </style>
+
+</body>
+</html>
